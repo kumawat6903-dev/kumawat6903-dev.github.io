@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OptiVision is a D.Opt student learning hub for ophthalmology notes and eye-care awareness.">
+  <title>OptiVision | D.Opt Learning Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="OptiVision home">
+      <span class="brand-icon">◉</span>
+      <span><strong>OptiVision</strong><small>LEARN · UNDERSTAND · CARE</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#study">Study</a>
+      <a href="#instruments">Instruments</a>
+      <a href="#diseases">Eye Conditions</a>
+      <a href="#care">Eye Care</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR D.OPT LEARNING HUB</p>
+        <h1>Understand Eyes.<br><span>Protect Vision.</span></h1>
+        <p class="hero-copy">Explore ophthalmology notes, learn about eye instruments, and discover simple habits that support healthy vision.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#study">Explore Study Notes <span>→</span></a>
+          <a class="button button-outline" href="#care">Eye Care Guide</a>
+        </div>
+        <p class="hero-note">Student-made educational resource · Free to explore</p>
+      </div>
+      <div class="eye-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="eye-shape"><div class="iris"><div class="pupil"></div><i></i></div></div>
+        <span class="art-label label-top">LEARN</span><span class="art-label label-bottom">VISION</span>
+      </div>
+    </section>
+
+    <section class="section" id="study">
+      <div class="section-heading">
+        <p class="eyebrow">BUILD YOUR KNOWLEDGE</p>
+        <h2>Explore the learning hub</h2>
+        <p>Start with a topic. More notes can be added as you study.</p>
+      </div>
+      <div class="card-grid">
+        <article class="topic-card">
+          <div class="card-icon">📚</div><p class="card-tag">STUDY</p>
+          <h3>D.Opt Notes</h3><p>Revise core ophthalmic topics in simple language.</p>
+          <button class="text-button topic-button" data-topic="notes">Explore topics <span>→</span></button>
+        </article>
+        <article class="topic-card" id="instruments">
+          <div class="card-icon">🔬</div><p class="card-tag">PRACTICAL</p>
+          <h3>Eye Instruments</h3><p>Learn what common ophthalmic instruments are used for.</p>
+          <button class="text-button topic-button" data-topic="instruments">Explore instruments <span>→</span></button>
+        </article>
+        <article class="topic-card" id="diseases">
+          <div class="card-icon">👁️</div><p class="card-tag">LEARN</p>
+          <h3>Eye Conditions</h3><p>Understand common conditions and their basic meaning.</p>
+          <button class="text-button topic-button" data-topic="conditions">Explore conditions <span>→</span></button>
+        </article>
+        <article class="topic-card" id="care">
+          <div class="card-icon">🛡️</div><p class="card-tag">AWARENESS</p>
+          <h3>Everyday Eye Care</h3><p>Simple, practical habits for looking after your eyes.</p>
+          <button class="text-button topic-button" data-topic="care">View eye-care tips <span>→</span></button>
+        </article>
+      </div>
+      <div class="topic-detail" id="topicDetail" aria-live="polite">
+        <div><p class="eyebrow">QUICK START</p><h3>Choose a topic above</h3><p>Its starter content will appear here.</p></div>
+      </div>
+    </section>
+
+    <section class="awareness-band">
+      <div class="awareness-symbol">20<span>·</span>20<span>·</span>20</div>
+      <div><p class="eyebrow">SCREEN-TIME REMINDER</p><h2>Give your eyes a break.</h2><p>For prolonged screen use, try looking about 20 feet away for 20 seconds every 20 minutes. It may help reduce digital eye strain.</p></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-mark">OV</div>
+      <div><p class="eyebrow">ABOUT OPTIVISION</p><h2>Learning today. Caring for vision tomorrow.</h2>
+      <p>OptiVision is a student learning project for D.Opt study and general eye-care awareness. The aim is to make eye-related learning easier to explore and revise.</p>
+      <p class="disclaimer">Educational information only. This website does not replace an eye examination or advice from a qualified eye-care professional.</p></div>
+    </section>
+  </main>
+
+  <footer><a class="footer-brand" href="#home">◉ OptiVision</a><span>Learn · Understand · Care</span><span>© <span id="year"></span> OptiVision Student Project</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
